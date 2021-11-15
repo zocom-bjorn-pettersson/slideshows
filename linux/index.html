@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vad är Linux?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      li {
+        padding: 0.5em 0;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      .remark-slide-content {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Vad är Linux?
+
+???
+
+Notes for the _first_ slide!
+
+---
+
+# Agenda
+
+1. Vad är en dator?
+2. Vad är ett operativsystem?
+3. Vad är Linux?
+3. Linuxdistar
+4. Licenser
+4. Hur använder vi Linux?
+
+---
+
+# Vad är en dator?
+
+En dator består av många delar, och exakt vilka dessa delar är beror på vad datorn är till för.
+
+De mest grundläggande komponenterna:
+
+* Processor
+* Minne
+* Lagring
+
+---
+
+# Vad är en dator? Processor
+
+En processor utför beräkningar, det är den som lägger ihop 1 och 1 och ger dig svaret 2.
+
+Processorer kan vara uppbyggda på olika sätt, dessa sätt kallas för olika sorters arkitekturer.
+
+Varje arkitektur har sin egen uppsättning instruktioner. De
+processorarkitekturer du förmodligen kommer stöta på mest är **AMD64** och **ARM**, och
+varje arkitektur har ett instruktionsset.
+
+---
+
+# Vad är en dator? Processor
+
+**X86_64** och **AMD64** är olika namn för samma sak. Även om du har en Intel-processor
+kan du använda AMD64.
+
+Du som har Mac kanske har märkt att det brukar finnas två versioner att ladda
+ner av program. Det ena är för om du har en dator med Intel-processor, den
+andra är för de modeller som har en ARM-processor - eller "Silicon" som Apple
+marknadsför det med.
+
+ARM används ofta för strömsnålare datorer, och används även i den absoluta
+majoriteten (om inte alla) mobiltelefoner.
+
+
+---
+
+# Vad är en dator? Minne
+
+Datorns minne - eller arbetsminne - är oerhört snabbt men informationen
+försvinner när strömen stängs av till datorn.
+
+Mängden minne du har i en laptop är vanligtvis **8GB** eller **16GB**.
+
+Alla program som du har igång har laddats in till minnet, och processorn hämtar
+och lagrar information i minnet när du använder datorn.
+
+---
+
+# Vad är en dator? Minne
+
+Om du startar för många program samtidigt så kan din dator bli långsam - det
+kan vara för att ditt arbetsminne tagit slut. Om det blir fullt börjar datorn
+spara saker till din hårddisk (som är mycket långsammare). Detta kallas för
+"swapping".
+
+Det kan även hända om du försöker spela ett spel eller använda ett program som
+kräver för mycket minne.
+
+---
+
+# Vad är en dator? Lagring
+
+Hårddiskar, antingen "klassiska mekaniska" eller "solid state" (SSD), är vad du
+har i datorn för att spara information som sparas en längre tid. När din dator
+startar så läses information från hårddisken till arbetsminnet.
+
+När du sparar ditt arbete så sparas det till hårddisken.
+
+I en modern laptop har du mellan 100GB och 500GB lagring.
+
+---
+
+# Vad är en dator? Lagring
+
+Medan en SSD är mycket snabbare än en mekanisk hårddisk så är den ändå mycket
+långsammare än ditt arbetsminne.
+
+Till skillnad från arbetsminnet så försvinner inte informationen från en
+hårddisk eller SSD efter att strömmen kopplas bort.
+
+---
+
+# Vad är en dator? Övrigt
+
+En dator har ju många fler komponenter. Exempelvis:
+
+Grafikkort, nätverkskort högtalare, mikrofon, kamera, tangentbord, mus,
+skrivare, et cetera.
+
+---
+
+# Vad är ett operativsystem?
+
+Ett operativsystem består av program, drivrutiner och annan mjukvara som gör
+vår vardag enklare.
+
+Drivrutiner är kod skriven för att datorn ska ha stöd för specifik hårdvara.
+
+Alla exempel på hårdvara från tidigare i presentationen kräver drivrutiner.
+
+---
+
+# Vad är ett operativsystem?
+
+<!-- ![](https://cdn.shopify.com/s/files/1/0051/4802/products/mona-1_large.jpg?v=1511308586) -->
+
+Exempel på operativsystem:
+
+* Microsoft Windows
+* Linux (Ubuntu, Debian, RedHat, Kali)
+* Apple OSX
+* Apple iOS
+* Android
+* BSD (NetBSD, OpenBSD, FreeBSD)
+
+---
+
+# Vad är Linux?
+
+Linux är en sån sak som betyder flera saker. I dagligt tal brukar vi prata om
+ett operativsystem, men om en ska vara teknisk så är Linux bara en relativt
+liten (men viktig) del av ett operativsystem.
+
+* I dagligt tal är Linux ett operativsystem
+* Tekniskt sätt är Linux en kärna - eller som det heter på engelska, en "kernel"
+
+Kärnan är i mitten och skalet är det som användaren ser.
+
+---
+
+# Vad är Linux?
+
+Det pratas ofta om två olika områden när det kommer till operativsystem:
+
+* Kernel-space
+* User-space
+
+Förenklad förklaring: Kärnan är den som tar hand om resurshantering och pratar
+med hårdvaran. User-space är de program som presenteras för användaren.
+
+---
+
+# Vad är Linux?
+
+Linux (vår kernel) är ett lager mellan vår hårdvara och alla program vi kör på datorn.
+
+Hemsidan för Linux är [kernel.org](kernel.org).
+
+Lästips:
+
+* [https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel](https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel)
+* LWN, nyheter om vad som händer i utvecklingen av linux-kärnan: [https://lwn.net](https://lwn.net)
+
+---
+
+# Vad är Linux?
+
+Linuxkärnan innehåller alla drivrutiner och agerar schemaläggare ("scheduler")
+som säger till när vilket program får prata med processorn.
+
+Linuxkärnan styr när processorn pratar med minnet och när saker skrivs till hårddisken.
+
+---
+
+# Vad är Linux?
+
+Innan Linux blev stort fanns det ett familj av operativsystem som hette UNIX -
+utvecklat av telefonoperatören AT&T 1969.
+
+UNIX ledde även till utvecklingen av BSD ("Berkeley Software Distribution")
+1977, och BSD är vad Apples operativsystem ursprungligen är inspirerat av.
+
+Dessa system kostade pengar att använda, och Linux utvecklades som ett
+kostnadsfritt alternativ till UNIX.
+
+Ur BSD kom även FreeBSD, som är grunden till operativsystemet i Playstation 4.
+
+---
+
+<pre>
+On Monday, August 26, 1991 6:12:08 PM
+UTC+12, Linus Benedict Torvalds wrote:
+
+> Hello everybody out there using minix -
+>
+> I'm doing a (free) operating system
+> (just a hobby, won't be big and
+> professional like gnu) for 386(486)
+> AT clones. This has been brewing
+> since april, and is starting to get
+> ready. I'd like any feedback on
+> things people like/dislike in minix,
+> as my OS resembles it somewhat
+> (same physical layout of the
+> file-system (due to practical reasons)
+> among other things).
+</pre>
+
+---
+
+<pre>
+> I've currently ported bash(1.08) and
+> gcc(1.40), and things seem to work.
+> This implies that I'll get something
+> practical within a few months, and
+> I'd like to know what features most
+> people would want. Any suggestions
+> are welcome, but I won't promise
+> I'll implement them :-)
+>
+> Linus (torv...@kruuna.helsinki.fi)
+</pre>
+
+---
+
+<pre>
+> PS. Yes - it's free of any minix code,
+> and it has a multi-threaded fs.
+> It is NOT protable (uses 386 task
+> switching etc), and it probably never
+> will support anything other than
+> AT-harddisks, as that's all I have :-(.
+</pre>
+
+---
+
+# Vad är Linux?
+
+* In 2021, the lines of code submitted to the Linux Git repository reached 27.8 million
+* In 2021, 100% of the world’s top 500 supercomputers run on Linux
+* Out of the top 25 websites in the world, only 2 aren’t using Linux
+
+---
+
+# Vad är Linux?
+
+* 96.3% of the world’s top 1 million servers run on Linux
+* 90% of all cloud infrastructure operates on Linux and practically all the best cloud hosts use it
+* 85% of all smartphones are based on Linux
+
+Källa: [https://hostingtribunal.com/blog/linux-statistics/](https://hostingtribunal.com/blog/linux-statistics/)
+
+---
+
+# Vad är Linux?
+
+* Linux är Open Source - öppen källkod
+* Licensen Linux använder är GPL - The GNU General Public Licence
+
+Öppen källkod betyder att vem som helst kan titta på koden och göra sina egna
+ändringar till den. Detta skiljer sig starkt från exempelvis Windows och Apple
+där de sakerna är företagshemligheter.
+
+---
+
+# Linuxdistar
+
+En linuxdistribution är en samling mjukvara som löser ett specifikt problem. En
+dist heter Ubuntu och ett av syfterna med den är att fler ska kunna byta från
+sina Windows- och Apple-datorer.
+
+En annan linuxdistribution är RedHat som många företag använder sig av på sina
+servrar. RedHat är även namnet på företaget som underhåller den här
+distrubitionen, och mot en licenskostnad så kan du få support.
+
+---
+
+# Linuxdistar
+
+CentOS är den dist jag sett mest av i mitt jobb. Det är exakt samma sak som
+RedHat - men utan licenskostnader och "branding". Detta är ett gratisalternativ
+till RedHat - men då också utan support.
+
+ScientificLinux gör samma sak som CentOS, men kommer utifrån CERN - de som
+jobbar med den stora partikelacceleratorn i Europa.
+
+---
+
+# Linuxdistar
+
+Skillnaden mellan Ubuntu och RedHat/CentOS/ScientificLinux är att den
+förstnämnda främst är till för folks arbetsdatorer, och RedHat är till för att
+köras på servrar.
+
+Medan Ubuntu är till för att du ska ha en bra webbläsare, bra Office-paket,
+kanske spela spel och titta på video så är servrarna till för att köra
+databaser, drifta hemsidor och låta servera video-filer och musik.
+
+I grunden gör de samma sak, men hur det pakteras till användaren och vad som
+prioriteras i utvecklingen skiljer sig åt.
+
+---
+
+# Licenser
+
+---
+
+# Licenser: GPL och MIT
+
+Licenser är överenskommelser mellan utvecklare om hur den kod de jobbar på
+tillsammans får användas.
+
+GPL betyder kort att om du gör ändringar och delar med dig av dessa ändringar
+till någon annan så måste du även ge dem källkoden.
+
+MIT betyder att du får göra ändringar men att du inte måste dela med dig av den
+ändrade källkoden.
+
+OBS: Jag är ingen advokat. IANAL: I am not a lawyer.
+
+---
+
+# Andra licenser
+
+* Apache License
+* Creative Commons
+* AGPL
+* med flera, se: [https://opensource.org/licenses/category](https://opensource.org/licenses/category)
+* Se även: [https://choosealicense.com/](https://choosealicense.com/)
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
